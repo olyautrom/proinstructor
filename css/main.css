@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0.25) 100%), url(../image/banner-back-photo.jpeg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0.25) 100%), url(./image/banner-back-photo.jpeg);
     background-size: cover;
     height: 600px;
     position: relative;
@@ -122,7 +122,7 @@ form {
 }
 .header__topline .contacts .contacts__phone:before {
     content: '';
-    background: url(../image/tel-vector.png) no-repeat;
+    background: url(./image/tel-vector.png) no-repeat;
     background-size: contain;
     width: 12px;
     height: 12px;
@@ -311,7 +311,7 @@ input[type=checkbox]:checked+label::before {
 }
 
 .text-info {
-    background: url(../image/background-y.png) no-repeat center;
+    background: url(./image/background-y.png) no-repeat center;
     background-size: cover;
     height: 800px;
 }
@@ -407,7 +407,7 @@ input[type=checkbox]:checked+label::before {
     border-bottom: 2px solid #BFE74D;
 }
 .car {
-    background: url(../image/background-car.png) no-repeat center;
+    background: url(./image/background-car.png) no-repeat center;
     background-size: cover;
     height: 810px;
     width: 100%;
@@ -602,7 +602,7 @@ input[type=checkbox]:checked+label::before {
     padding: 18px 50px;
 }
 .prace-and-about {
-    background: url(../image/background-conus.png) no-repeat center;
+    background: url(./image/background-conus.png) no-repeat center;
     background-size: cover;
     padding-bottom: 88px;
 }
@@ -650,15 +650,15 @@ input[type=checkbox]:checked+label::before {
 }
 .prace-info .prace-info__item .img-item1 {
     background-color: #BFE74D;
-    background-image: url(../image/car-silver.png);
+    background-image: url(./image/car-silver.png);
 }
 .prace-info .prace-info__item .img-item2 {
     background-color: #FFE24D;
-    background-image: url(../image/car-grey.png);
+    background-image: url(./image/car-grey.png);
 }
 .prace-info .prace-info__item .img-item3 {
     background-color: #94C4EC;
-    background-image: url(../image/car-black.png);
+    background-image: url(./image/car-black.png);
 }
 .prace-info .prace-info__item .img-item1:hover,
 .prace-info .prace-info__item .img-item2:hover,
@@ -711,7 +711,7 @@ input[type=checkbox]:checked+label::before {
     text-align: center;
 }
 .any-questions {
-    background: url(../image/background-driver.png) no-repeat center;
+    background: url(./image/background-driver.png) no-repeat center;
     background-size: cover;
 }
 .any-questions h4 {
@@ -809,17 +809,17 @@ input[type=checkbox]:checked+label::before {
 }
 .category-modal .img-item1 {
     background-color: #BFE74D;
-    background-image: url(../image/car-silver.png);
+    background-image: url(./image/car-silver.png);
     background-size: auto 92%;
 }
 .category-modal .img-item2 {
     background-color: #FFE24D;
-    background-image: url(../image/car-grey.png);
+    background-image: url(./image/car-grey.png);
     background-size: auto 92%;
 }
 .category-modal .img-item3 {
     background-color: #94C4EC;
-    background-image: url(../image/car-black.png);
+    background-image: url(./image/car-black.png);
     background-size: auto 92%;
 }
 .category-modal .img-item1:hover,
@@ -987,7 +987,7 @@ p.p-grey {
 }
 .category-modal.category-c0 .category-modal__info p:before {
     content: '';
-    background: url(../image/check.png) no-repeat;
+    background: url(./image/check.png) no-repeat;
     background-size: contain;
     width: 23px;
     height: 24px;
@@ -996,7 +996,7 @@ p.p-grey {
 }
 .category-modal.category-vip .category-modal__info p:before {
     content: '';
-    background: url(../image/check-yellow.png) no-repeat;
+    background: url(./image/check-yellow.png) no-repeat;
     background-size: contain;
     width: 23px;
     height: 24px;
@@ -1005,7 +1005,7 @@ p.p-grey {
 }
 .category-modal.category-dop .category-modal__info p:before {
     content: '';
-    background: url(../image/check-blue.png) no-repeat;
+    background: url(./image/check-blue.png) no-repeat;
     background-size: contain;
     width: 23px;
     height: 24px;
@@ -1137,7 +1137,7 @@ p.p-grey {
 }
 .header__topline-mob .contacts .contacts__phone:before {
     content: '';
-    background: url(../image/tel-vector.png) no-repeat;
+    background: url(./image/tel-vector.png) no-repeat;
     background-size: contain;
     width: 12px;
     height: 12px;
@@ -1583,7 +1583,7 @@ p.p-grey {
     padding: 11px 30px;
 }
 .services-description {
-    background: url(../image/background-conus-and-y.png) no-repeat center;
+    background: url(./image/background-conus-and-y.png) no-repeat center;
     background-size: cover;
     padding: 43px 0 100px 0;
 }
@@ -1592,17 +1592,17 @@ p.p-grey {
 }
 .category-modal .img-item1 {
     background-color: #BFE74D;
-    background-image: url(../image/car-silver.png);
+    background-image: url(./image/car-silver.png);
     background-size: auto 92%;
 }
 .category-modal .img-item2 {
     background-color: #FFE24D;
-    background-image: url(../image/car-grey.png);
+    background-image: url(./image/car-grey.png);
     background-size: auto 92%;
 }
 .category-modal .img-item3 {
     background-color: #94C4EC;
-    background-image: url(../image/car-black.png);
+    background-image: url(./image/car-black.png);
     background-size: auto 92%;
 }
 .services-items {
@@ -1615,15 +1615,15 @@ p.p-grey {
 }
 .services-description .services__item .img-item1 {
     background-color: #BFE74D;
-    background-image: url(../image/car-silver.png);
+    background-image: url(./image/car-silver.png);
 }
 .services-description .services__item .img-item2 {
     background-color: #FFE24D;
-    background-image: url(../image/car-grey.png);
+    background-image: url(./image/car-grey.png);
 }
 .services-description .services__item .img-item3 {
     background-color: #94C4EC;
-    background-image: url(../image/car-black.png);
+    background-image: url(./image/car-black.png);
 }
 .services-description .services__item .img {
     background-size: auto 60%;
@@ -1660,7 +1660,7 @@ p.p-grey {
 }
 .services-description .services__item.item1 h6:before {
     content: '';
-    background: url(../image/check.png) no-repeat;
+    background: url(./image/check.png) no-repeat;
     background-size: contain;
     position: absolute;
     width: 32px;
@@ -1669,7 +1669,7 @@ p.p-grey {
 }
 .services-description .services__item.item2 h6:before {
     content: '';
-    background: url(../image/check-yellow.png) no-repeat;
+    background: url(./image/check-yellow.png) no-repeat;
     background-size: contain;
     position: absolute;
     width: 32px;
@@ -1678,7 +1678,7 @@ p.p-grey {
 }
 .services-description .services__item.item3 h6:before {
     content: '';
-    background: url(../image/check-blue.png) no-repeat;
+    background: url(./image/check-blue.png) no-repeat;
     background-size: contain;
     position: absolute;
     width: 32px;
@@ -1686,7 +1686,7 @@ p.p-grey {
     margin-left: -47px;
 }
 .education-about {
-    background: url(../image/background-education-conus.png) no-repeat center;
+    background: url(./image/background-education-conus.png) no-repeat center;
     background-size: cover;
     padding-bottom: 88px;
 }
@@ -1788,7 +1788,7 @@ p.p-grey {
     height: 720px;
 }
 .questionnaire {
-    background: url(../image/background-green-car.png) no-repeat center;
+    background: url(./image/background-green-car.png) no-repeat center;
     background-size: cover;
     padding: 67px 0 110px 0;
 }
@@ -1857,7 +1857,7 @@ p.p-grey {
     position: absolute;
     width: 24px;
     height: 24px;
-    background: url(../image/plus.png) 0% 0% / contain no-repeat;  
+    background: url(./image/plus.png) 0% 0% / contain no-repeat;  
 }
 #fl_nm {
     font-size: 12px;  
@@ -1989,7 +1989,7 @@ p.p-grey {
     }
 }
 .news {
-    background: url(../image/background-news.png) no-repeat top;
+    background: url(./image/background-news.png) no-repeat top;
     background-size: cover;
     padding: 40px 0;
 }
@@ -2067,7 +2067,7 @@ p.p-grey {
     display: none;
 }
 .reviews-slider {
-    background: url(../image/background-conus-and-y.png) no-repeat center;
+    background: url(./image/background-conus-and-y.png) no-repeat center;
     background-size: cover;
     padding: 94px 0 51px;
 }
@@ -2137,7 +2137,7 @@ textarea {
     letter-spacing: 0.03em;
     color: #333333;
     padding: 40px 0;
-    background: url(../image/background-news.png) no-repeat top;
+    background: url(./image/background-news.png) no-repeat top;
     background-size: cover;
 }
 .news-inner p {
