@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/element-closest"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./image/favicon.png" type="./image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;500;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vqu2pjv.css">
+    <title>Автоинструктор</title>
+</head>
+
+<body>
+    <header class="header-short">
+        <div class="header__topline-mob">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>         
+                <ul class="menu__hamburger">
+                    <li><a class="menu__item" href="index.html">Главная</a></li>
+                    <li><a class="menu__item" href="education.html">Обучение</a></li>
+                    <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+                    <li><a class="menu__item" href="instructors.html">Инструкторам</a></li>
+                    <li><a class="menu__item" href="news.html">Новости</a></li>
+                    <div class="contacts-hamburger">
+                        <a href="tel:+7 (499) 999-99-99"><img src="./image/tel-vector.png" alt=""/></a>
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK-mob.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Instagram-mob.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram-mob.png" alt=""/></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a class="contacts__phone" href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a>
+                <div class="socials">
+                    <a href="https://vk.com/pro_instruktor"><img src="./image/VK-mob.png" alt=""/></a>
+                    <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Instagram-mob.png" alt=""/></a>
+                    <a href="https://t.me/pro_instruktor"><img src="./image/Telegram-mob.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href=""><img src="./image/logo-color.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__topline">
+                <div class="logo">
+                    <a href=""><img src="./image/logo-color.png" alt=""/></a>
+                </div>
+                <div class="menu" id="header-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="education.html">Обучение</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="instructors.html">Инструкторам</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <a class="contacts__phone" href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a>
+                    <div class="socials">
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Inst.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottomline">
+                <div class="title">
+                    <h3>Автошкола <span>Pro Instruktor</span></h3>
+                </div>
+                <div class="subtitle">
+                    <h6>Академия безопасного вождения</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="gallery-about-info">
+            <div class="container">
+                <div class="about-info">
+                    <div class="about-info__item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ApokyLNvSXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="about-info__item">
+                        <div class="info-text-scroll">
+                            <h5>К нам Вы пешеход, от нас Вы водитель</h5>
+                            <p>Мы предлагаем обучение по специальной методике, разработанной непосредственно в нашей академии. Уверяем Вас, на первом занятие Вы поймёте, что сделали правильный выбор.</p>
+                            <p>Почему стоит записаться к нам?</p>
+                            <ul>
+                                <li>МЫ ОТВЕЧАЕМ ЗА ВАШУ БЕЗОПАСНОСТЬ НЕ ТОЛЬКО НА ДОРОГАХ, НО И В ШКОЛЕ: поэтому всю теорию собрали на специальной платформе, видеоматериал с которой вы можете изучать в любом месте и в любое время!</li>
+                                <li>ПРАКТИЧЕСКИЕ ЗАНЯТИЯ ПРОХОДЯТ НА СПЕЦИАЛЬНО ОБОРУДОВАННЫХ ПЛОЩАДКАХ: вы можете выбрать одну из предложенных локаций, исходя из удобного для вас расположения. Доступны площадки вблизи м. Молодежная, Марьино, Юго-западная и Домодедовская.</li>
+                            </ul>
+                            <p>Практические занятия, также, проводятся в разных частях города, шоссе и центра. Изучаем и разбираем ваши маршруты!</p>
+                            <p>Мы гарантируем индивидуальный подход к каждому ученику в зависимости от степени подготовки, возраста и психологической устойчивости.</p>
+                        </div>
+                        <div class="btn green-btn">
+                            <a href="#" class="js-open-modal" data-modal="recording">Хочу также</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-foto">
+            <div class="container">
+                <h4>Галерея</h4>
+                <div class="foto-slider" id="foto-slider">
+                    <div class="foto-slider__item">
+                        <img src="./image/gallary-image1.jpg" alt="">
+                    </div>
+                    <div class="foto-slider__item">
+                        <img src="./image/gallary-image2.jpg" alt="">
+                    </div>
+                    <div class="foto-slider__item">
+                        <img src="./image/gallary-image3.jpg" alt="">
+                    </div>
+                    <div class="foto-slider__item">
+                        <img src="./image/gallary-image4.jpg" alt="">
+                    </div>
+                    <div class="foto-slider__item">
+                        <img src="./image/gallary-image5.jpg" alt="">
+                    </div>
+                    <div class="foto-slider__item">
+                        <img src="./image/gallary-image6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback-line">
+            <div class="container">
+                <h4>Хотите получить бесплатное пробное занятие?</h4>
+                <div  class="btn green-btn">
+                    <a href="#" class="js-open-modal" data-modal="recording">Получить</a>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-slider">
+            <div class="container">
+                <h4>Отзывы наших учеников</h4>
+                <div class="reviews-slider__inner">
+                    <img src="./image/phone.png" class="phone" alt="">
+                    <div class="reviews-slider-items" id="reviews-slider-items">
+                        <div><img src="./image/review1.png" alt=""></div>
+                        <div><img src="./image/review2.png" alt=""></div>
+                        <div><img src="./image/review3.png" alt=""></div>
+                        <div><img src="./image/review4.png" alt=""></div>
+                    </div>
+                </div>
+                <form action="#" method="post" class="form-review">
+                    <h5>Оставьте свой отзыв</h5>
+                    <h6>Ваше имя:</h6>
+                    <p><input type="text" required></p>
+                    <h6>Отзыв:</h6>
+                    <p><textarea required></textarea></p>
+                    <p>
+                        <input type="checkbox" id="review-check" checked required>
+                        <label class="checkbox" for="review-check"></label>
+                        <label for="modal-recording-check">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a> и публикацию отзыва в интернете.</label>
+                    </p>
+                    <button type="submit" class="btn form-btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="any-questions">
+            <div class="container">
+                <h4>Остались вопросы?</h4>
+                <div class="any-questions-items">
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUEAMbi8A" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative; border-radius: 6px;">
+                        </iframe>
+                    </div>
+                    <div class="form">
+                        <form action="#" method="post" name="cost-calculation">
+                            <h5>Рассчитайте стоимость обучения</h5>
+                            <p><input type="text" name="cost-name" placeholder="Ваше имя" required></p>
+                            <p><input type="text" name="cost-email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="Email" required></p>
+                            <p>
+                                <select required>
+                                    <option disabled selected>Начальные навыки</option>
+                                    <option value="no">Никогда не сидел за рулем</option>
+                                    <option value="yes">Есть начальные навыки</option>
+                                </select>
+                            </p>
+                            <p>
+                                <select required>
+                                    <option disabled selected>Категория</option>
+                                    <option value="a">Категория "A"</option>
+                                    <option value="b">Категория "В"</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="check-cost" name="cost-check" checked required>
+                                <label class="checkbox" for="check-cost"></label>
+                                <label for="check-cost">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                            </p>
+                            <button type="submit" class="btn form-btn">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="logo-and-socials">
+                    <div class="logo">
+                        <a href="#"><img src="./image/logo.png" alt=""/></a>
+                    </div>
+                    <div class="socials">
+                        <h6>Соц. сети</h6>
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Inst.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="information">
+                    <h6>Информация</h6>
+                    <p><a href="education.html">Обучение</a></p>
+                    <p><a href="instructors.html">Инструкторам</a></p>
+                </div>
+                <div class="contacts">
+                    <h6>Контакты</h6>
+                    <p><a href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a></p>
+                    <p><a href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a></p>
+                    <p><a href="mailto:mail.mail@mail.ru">mail.mail@mail.ru</a></p>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <div class="modal" data-modal="recording">
+        <div class="form-modal">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <form action="#" method="post"  name="form-modal-recording">
+                <h5>Оставьте заявку на обучение</h5>
+                <p><input type="text" name="record-name" placeholder="Ваше имя" required></p>
+                <p><input type="text" name="record-phone" id="modal-recording-tel" placeholder="Телефон" required></p>
+                <p><input type="text" name="record-email" id="modal-recording-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="Email" required></p>
+                <p>
+                    <select required>
+                        <option disabled selected>Начальные навыки</option>
+                        <option value="no">Никогда не сидел за рулем</option>
+                        <option value="yes">Есть начальные навыки</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="modal-recording-check" name="record-check" checked required>
+                    <label class="checkbox" for="modal-recording-check"></label>
+                    <label for="modal-recording-check">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                </p>
+                <button type="submit" class="btn form-btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay js-overlay-modal"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

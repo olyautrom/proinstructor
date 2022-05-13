@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/element-closest"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./image/favicon.png" type="./image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;500;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vqu2pjv.css">
+    <title>Автоинструктор</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__topline-mob">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>         
+                <ul class="menu__hamburger">
+                    <li><a class="menu__item" href="index.html">Главная</a></li>
+                    <li><a class="menu__item" href="education.html">Обучение</a></li>
+                    <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+                    <li><a class="menu__item" href="instructors.html">Инструкторам</a></li>
+                    <li><a class="menu__item" href="news.html">Новости</a></li>
+                    <div class="contacts-hamburger">
+                        <a href="tel:+7 (499) 999-99-99"><img src="./image/tel-vector.png" alt=""/></a>
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK-mob.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Instagram-mob.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram-mob.png" alt=""/></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a class="contacts__phone" href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a>
+                <div class="socials">
+                    <a href="https://vk.com/pro_instruktor"><img src="./image/VK-mob.png" alt=""/></a>
+                    <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Instagram-mob.png" alt=""/></a>
+                    <a href="https://t.me/pro_instruktor"><img src="./image/Telegram-mob.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="./image/logo-color.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__topline">
+                <div class="logo">
+                    <a href="#"><img src="./image/logo-color.png" alt=""/></a>
+                </div>
+                <div class="menu" id="header-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="education.html">Обучение</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="instructors.html">Инструкторам</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <a class="contacts__phone" href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a>
+                    <div class="socials">
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Inst.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottomline">
+                <div class="title">
+                    <h3>Автошкола</h3>
+                    <h3><span>Pro Instruktor</span></h3>
+                </div>
+                <div class="subtitle">
+                    <h6>Академия безопасного вождения</h6>
+                </div>
+                <div class="btn">
+                    <a href="#" class="js-open-modal" data-modal="call">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="form-request">
+                <form action="#" method="post"  name="form-application-training">
+                    <h5>Оставьте заявку на обучение</h5>
+                    <p><input type="text" name="applic-name" placeholder="Ваше имя" required></p>
+                    <p><input type="text" name="applic-phone" id="tel" placeholder="Телефон" required></p>
+                    <p><input type="text" name="applic-email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="Email" required></p>
+                    <p>
+                        <select required>
+                            <option disabled selected>Начальные навыки</option>
+                            <option value="no">Никогда не сидел за рулем</option>
+                            <option value="yes">Есть начальные навыки</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="check" name="applic-check" checked required>
+                        <label class="checkbox" for="check"></label>
+                        <label for="check">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                    </p>
+                    <button type="submit" class="btn form-btn">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="text-info">
+            <div class="container">
+                <div class="text-column">
+                    <div class="text-column__first">
+                        <div class="text-column__item">
+                            <h5>Гарантия сдачи экзаменов в ГИБДД</h5>
+                            <p>Во время обучения мы подготовим для Вас полный пакет документов для сдачи экзаменов в ГИБДД. Будьте спокойны, ведь 100% наших учеников сдают на права.</p>
+                            <div class="btn green-btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="text-column__item">
+                            <h5>Индивидуальный подход к ученику</h5>
+                            <p>Мы разработаем Вам наилучший график обучения. Занятия будут проходить на удобной для Вас локации.</p>
+                            <div class="btn green-btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-column__second">
+                        <div class="text-column__item">
+                            <h5>Практика с опытным инструктором</h5>
+                            <p>У нас работают только профессионалы своего дела, с большим опытом вождения и с отличными педагогическими навыками</p>
+                            <div class="btn green-btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="car">
+            <div class="car-block">
+                <div class="car-block__item car-block__item1">
+                    <div class="text">
+                        <h6>Индивидуальный подход</h6>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="car-block__item car-block__item2">
+                    <div class="text">
+                        <h6>Ориентированность на успех</h6>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="car-block__item car-block__item3">
+                    <div class="text">
+                        <h6>Проработка всех навыков</h6>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="car-block__item car-block__item4">
+                    <div class="text">
+                        <h6>Детальный разбор ошибок</h6>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="car-block__item car-block__item5">
+                    <div class="text">
+                        <h6>Лучшая система подготовки</h6>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="car-block__item car-block__item6">
+                    <div class="text">
+                        <h6>Парковка в реальных условиях</h6>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="car-block__img">
+                    <img src="./image/car.png" alt="">
+                </div>
+            </div>  
+        </section>
+        <section class="all-the-way">
+            <div class="container">
+                <h4>Совместно пройдем путь от начала до конца</h4>
+                <div class="selector">
+                    <div id="selector-briefly" class="briefly active">Кратко</div>
+                    <div id="selector-detail" class="detail">Подробнее</div>
+                </div>
+                <div class="all-the-way-items">
+                    <div class="all-the-way__item">
+                        <img src="./image/all-the-way1.png" alt="">
+                        <h5>Расчет стоимости</h5>
+                        <div class="detail close">                        
+                            <p>Подберем оптимальный пакет в зависимости от ваших предпочтений</p>
+                        </div>
+                    </div>
+                    <div class="all-the-way__item">
+                        <img src="./image/all-the-way2.png" alt="">
+                        <h5>Подбор обучения</h5>
+                        <div class="detail close">
+                            <p>Найдем для Вас оптимальную программу с учетом ваших начальных навыков, основываясь на удобное время и место для обучения.</p>
+                        </div>
+                    </div>
+                    <div class="all-the-way__item">
+                        <img src="./image/all-the-way3.png" alt="">
+                        <h5>Экзамен в ГИБДД</h5>
+                        <div class="detail close">
+                            <p>Ваш курс обучения будет направлен на прохождение практического экзамена. После сдачи  которого Вы будете готовы к реальным городским условиям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback-line">
+            <div class="container">
+                <h4>Записаться на пробное занятие всего в 1 клик</h4>
+                <div  class="btn green-btn">
+                    <a href="#" class="js-open-modal" data-modal="recording">Записаться</a>
+                </div>
+            </div>
+        </section>
+        <section class="prace-and-about" id="prace-and-about">
+            <div class="container">
+                <h4>Тарифы и стоимость</h4>
+                <div class="prace-info">
+                    <div class="prace-info__item item1">
+                        <div class="img-item1">
+                            <h2>Start</h2>
+                        </div>
+                        <h5>Обучение с нуля</h5>
+                        <h6>У Вас еще не было опыта вождения? Тогда план для Вас.</h6>
+                        <div class="btn green-btn">
+                            <a href="#" class="js-open-modal" data-modal="category-c0">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="prace-info__item item2">
+                        <div class="img-item2">
+                            <h2>Vip</h2>
+                        </div>
+                        <h5>VIP обучение</h5>
+                        <h6>Практические и теоритические занятия лично с инструктором.</h6>
+                        <div class="btn green-btn">
+                            <a href="#" class="js-open-modal" data-modal="category-vip">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="prace-info__item item3">
+                        <div class="img-item3">
+                            <h2>Next</h2>
+                        </div>
+                        <h5>Доп. обучение</h5>
+                        <h6>Занятия для улучшения навыков вождения и подготовке к экзаменам в ГИБДД.</h6>
+                        <div class="btn green-btn">
+                            <a href="#" class="js-open-modal" data-modal="category-dop">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <h4>Немного о нашей автошколе</h4>
+                <div class="about-info">
+                    <div class="about-info__item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ApokyLNvSXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="about-info__item">
+                        <div class="info-text-scroll">
+                            <h5>К нам Вы пешеход, от нас Вы водитель</h5>
+                            <p>Мы предлагаем обучение по специальной методике, разработанной непосредственно в нашей академии. Уверяем Вас, на первом занятие Вы поймёте, что сделали правильный выбор.</p>
+                            <p>Почему стоит записаться к нам?</p>
+                            <ul>
+                                <li>МЫ ОТВЕЧАЕМ ЗА ВАШУ БЕЗОПАСНОСТЬ НЕ ТОЛЬКО НА ДОРОГАХ, НО И В ШКОЛЕ: поэтому всю теорию собрали на специальной платформе, видеоматериал с которой вы можете изучать в любом месте и в любое время!</li>
+                                <li>ПРАКТИЧЕСКИЕ ЗАНЯТИЯ ПРОХОДЯТ НА СПЕЦИАЛЬНО ОБОРУДОВАННЫХ ПЛОЩАДКАХ: вы можете выбрать одну из предложенных локаций, исходя из удобного для вас расположения. Доступны площадки вблизи м. Молодежная, Марьино, Юго-западная и Домодедовская.</li>
+                            </ul>
+                            <p>Практические занятия, также, проводятся в разных частях города, шоссе и центра. Изучаем и разбираем ваши маршруты!</p>
+                            <p>Мы гарантируем индивидуальный подход к каждому ученику в зависимости от степени подготовки, возраста и психологической устойчивости.</p>
+                        </div>
+                        <div class="btn green-btn">
+                            <a href="#" class="js-open-modal" data-modal="recording">Хочу также</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="any-questions">
+            <div class="container">
+                <h4>Остались вопросы?</h4>
+                <div class="any-questions-items">
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUEAMbi8A" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative; border-radius: 6px;">
+                        </iframe>
+                    </div>
+                    <div class="form">
+                        <form action="#" method="post" name="cost-calculation">
+                            <h5>Рассчитайте стоимость обучения</h5>
+                            <p><input type="text" name="cost-name" placeholder="Ваше имя" required></p>
+                            <p><input type="text" name="cost-email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="Email" required></p>
+                            <p>
+                                <select required>
+                                    <option disabled selected>Начальные навыки</option>
+                                    <option value="no">Никогда не сидел за рулем</option>
+                                    <option value="yes">Есть начальные навыки</option>
+                                </select>
+                            </p>
+                            <p>
+                                <select required>
+                                    <option disabled selected>Категория</option>
+                                    <option value="a">Категория "A"</option>
+                                    <option value="b">Категория "В"</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="check-cost" name="cost-check" checked required>
+                                <label class="checkbox" for="check-cost"></label>
+                                <label for="check-cost">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                            </p>
+                            <button type="submit" class="btn form-btn">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="logo-and-socials">
+                    <div class="logo">
+                        <a href="#"><img src="./image/logo.png" alt=""/></a>
+                    </div>
+                    <div class="socials">
+                        <h6>Соц. сети</h6>
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Inst.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="information">
+                    <h6>Информация</h6>
+                    <p><a href="education.html">Обучение</a></p>
+                    <p><a href="instructors.html">Инструкторам</a></p>
+                </div>
+                <div class="contacts">
+                    <h6>Контакты</h6>
+                    <p><a href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a></p>
+                    <p><a href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a></p>
+                    <p><a href="mailto:mail.mail@mail.ru">mail.mail@mail.ru</a></p>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <div class="modal" data-modal="call">
+        <div class="form-modal">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <form action="#" method="post"  name="form-modal-call">
+                <h5>Мы с вами свяжемся</h5>
+                <p><input type="text" name="call-name" placeholder="Ваше имя" required></p>
+                <p><input type="text" name="call-phone" id="modal-call-tel" placeholder="Телефон" required></p>
+                <p>
+                    <input type="checkbox" id="modal-call-check" name="record-check" checked required>
+                    <label class="checkbox" for="modal-call-check"></label>
+                    <label for="modal-recording-check">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                </p>
+                <button type="submit" class="btn form-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" data-modal="recording">
+        <div class="form-modal">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <form action="#" method="post"  name="form-modal-recording">
+                <h5>Оставьте заявку на обучение</h5>
+                <p><input type="text" name="record-name" placeholder="Ваше имя" required></p>
+                <p><input type="text" name="record-phone" id="modal-recording-tel" placeholder="Телефон" required></p>
+                <p><input type="text" name="record-email" id="modal-recording-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="Email" required></p>
+                <p>
+                    <select required>
+                        <option disabled selected>Начальные навыки</option>
+                        <option value="no">Никогда не сидел за рулем</option>
+                        <option value="yes">Есть начальные навыки</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="modal-recording-check" name="record-check" checked required>
+                    <label class="checkbox" for="modal-recording-check"></label>
+                    <label for="modal-recording-check">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                </p>
+                <button type="submit" class="btn form-btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal category" data-modal="category-c0">
+        <div class="category-modal category-c0">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p class="p-grey">Вы выбрали пакет</p>
+            <div class="img-item1">
+                <h2>Start</h2>
+            </div>
+            <div class="category-modal-items">
+                <div class="category-modal__calc">
+                    <div class="radio-transmission">
+                        <div class="radio-transmission__item item1">
+                            <input id="transmission-1-category-c0" type="radio" name="radio-transmission-category-c0" checked>
+                            <label for="transmission-1-category-c0">МКПП</label>
+                        </div>
+                        <div class="radio-transmission__item item2">
+                            <input id="transmission-2-category-c0" type="radio" name="radio-transmission-category-c0">
+                            <label for="transmission-2-category-c0">АКПП</label>
+                        </div>
+                    </div>
+                    <p>Выберите количество часов:</p>
+                    <div class="radio-hours">
+                        <div class="radio-hours__item">
+                            <input id="radio-1-category-c0" type="radio" name="radio-hours-category-c0" value="28" checked>
+                            <label for="radio-1-category-c0"><h4>28</h4></label>
+                        </div>
+                        
+                        <div class="radio-hours__item">
+                            <input id="radio-2-category-c0" type="radio" name="radio-hours-category-c0" value="40">
+                            <label for="radio-2-category-c0"><h4>40</h4></label>
+                        </div>
+                        
+                        <div class="radio-hours__item">
+                            <input id="radio-3-category-c0" type="radio" name="radio-hours-category-c0" value="56">
+                            <label for="radio-3-category-c0"><h4>56</h4></label>
+                        </div>
+                    </div>
+                    <p>Выберите категорию навыков:</p>
+                    <select id="select-category-c0" required>
+                        <option>Никогда не сидел за рулем</option>
+                        <option>Есть начальные навыки</option>
+                    </select>
+                    <div class="category-price">
+                        <p>Итого:</p>
+                        <p><span id="category-price-c0">24 900 ₽</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="category-modal__info">
+                    <div class="caption">В стоимость входит:</div>
+                    <p>За время обучения подготовим необходимый пакет документов для сдачи экзамена в ГИБДД</p>
+                    <p>Изучение теории, правил ПДД и билетов в режиме онлайн</p>
+                    <p>Практические занятия на площадке и в городе, с проработкой основ маневрирования и улучшением навыков вождения в реальной обстановке</p>
+                </div>
+            </div>
+            <div class="btn green-btn">
+                <a class="js-change-modal" id="transfer-info-c0" data-modal="call">Далее</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal category" data-modal="category-vip">
+        <div class="category-modal category-vip">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p class="p-grey">Вы выбрали пакет</p>
+            <div class="img-item2">
+                <h2>Vip</h2>
+            </div>
+            <div class="category-modal-items">
+                <div class="category-modal__calc">
+                    <div class="radio-transmission">
+                        <div class="radio-transmission__item item1">
+                            <input id="transmission-1-category-vip" type="radio" name="radio-transmission-category-vip" checked>
+                            <label for="transmission-1-category-vip">МКПП</label>
+                        </div>
+                        <div class="radio-transmission__item item2">
+                            <input id="transmission-2-category-vip" type="radio" name="radio-transmission-category-vip">
+                            <label for="transmission-2-category-vip">АКПП</label>
+                        </div>
+                    </div>
+                    <p>Выберите количество занятий:</p>
+                    <div class="radio-hours">
+                        <div class="radio-hours__item">
+                            <input id="radio-1-category-vip" type="radio" name="radio-hours-category-vip" value="+11" checked>
+                            <label for="radio-1-category-vip">ТЕОРИЯ <h4>+11</h4></label>
+                        </div>
+                        <div class="radio-hours__item">
+                            <input id="radio-2-category-vip" type="radio" name="radio-hours-category-vip">
+                        </div>
+                    </div>
+                    <p>Выберите категорию навыков:</p>
+                    <select id="select-category-vip" required>
+                        <option>Никогда не сидел за рулем</option>
+                        <option>Есть начальные навыки</option>
+                    </select>
+                    <div class="category-price">
+                        <p>Итого:</p>
+                        <p><span id="category-price-vip">69 000 ₽</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="category-modal__info">
+                    <div class="caption">В стоимость входит:</div>
+                    <p>Изучение теории непосредственно с преподавателем и практические занятия на площадке, в городе</p>
+                    <p>Составление индивидуального расписания с инструктором, исходя из ваших предпочтений и графика</p>
+                    <p>Сопровождение в ГИБДД и дополнительный инструктаж для успешной сдачи экзамена</p>
+                </div>
+            </div>
+            <div class="btn green-btn">
+                <a class="js-change-modal" id="transfer-info-vip" data-modal="call">Далее</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal category" data-modal="category-dop">
+        <div class="category-modal category-dop">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p class="p-grey">Вы выбрали пакет</p>
+            <div class="img-item3">
+                <h2>Next</h2>
+            </div>
+            <div class="category-modal-items">
+                <div class="category-modal__calc">
+                    <div class="radio-transmission">
+                        <div class="radio-transmission__item item1">
+                            <input id="transmission-1-category-dop" type="radio" name="radio-transmission-category-dop" value="manual" checked>
+                            <label for="transmission-1-category-dop">МКПП</label>
+                        </div>
+                        <div class="radio-transmission__item item2">
+                            <input id="transmission-2-category-dop" type="radio" name="radio-transmission-category-dop" value="auto">
+                            <label for="transmission-2-category-dop">АКПП</label>
+                        </div>
+                    </div>
+                    <p>Выберите количество занятий:</p>
+                    <div class="radio-hours">
+                        <div class="radio-hours__item">
+                            <input id="radio-1-category-dop" type="radio" name="radio-hours-category-dop" value="5" checked>
+                            <label for="radio-1-category-dop"><h4>5</h4></label>
+                        </div>
+                        
+                        <div class="radio-hours__item">
+                            <input id="radio-2-category-dop" type="radio" name="radio-hours-category-dop" value="10">
+                            <label for="radio-2-category-dop"><h4>10</h4></label>
+                        </div>
+                        
+                        <div class="radio-hours__item">
+                            <input id="radio-3-category-dop" type="radio" name="radio-hours-category-dop" value="15">
+                            <label for="radio-3-category-dop"><h4>15</h4></label>
+                        </div>
+                    </div>
+                    <p>Выберите цель занятий:</p>
+                    <select id="select-category-dop" required>
+                        <option>Подготовка к экзаменам</option>
+                        <option>Восстановление навыков</option>
+                        <option>Улучшение техники вождения</option>
+                    </select>
+                    <div class="category-price">
+                        <p>Итого:</p>
+                        <p><span id="category-price-dop">7 500 ₽</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="category-modal__info">
+                    <div class="caption">В стоимость входит:</div>
+                    <p>Курс теории ПДД и изучение основ управления автомобиля, включая технику руления, работу с педалями сцепления, тормоза и газа</p>
+                    <p>Практические занятия на площадке и в городе для успешной сдачи экзамена и последующего вождения в реальных условиях</p>
+                    <p>Освежите навыки вождения, если давно не садились за руль</p>
+                </div>
+            </div>
+            <div class="btn green-btn">
+                <a class="js-change-modal" id="transfer-info-dop" data-modal="call">Далее</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay js-overlay-modal"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

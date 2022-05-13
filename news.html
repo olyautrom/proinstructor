@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/element-closest"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./image/favicon.png" type="./image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;500;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vqu2pjv.css">
+    <title>Автоинструктор</title>
+</head>
+
+<body>
+    <header class="header-short">
+        <div class="header__topline-mob">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>         
+                <ul class="menu__hamburger">
+                    <li><a class="menu__item" href="index.html">Главная</a></li>
+                    <li><a class="menu__item" href="education.html">Обучение</a></li>
+                    <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+                    <li><a class="menu__item" href="instructors.html">Инструкторам</a></li>
+                    <li><a class="menu__item" href="news.html">Новости</a></li>
+                    <div class="contacts-hamburger">
+                        <a href="tel:+7 (499) 999-99-99"><img src="./image/tel-vector.png" alt=""/></a>
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK-mob.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Instagram-mob.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram-mob.png" alt=""/></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a class="contacts__phone" href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a>
+                <div class="socials">
+                    <a href="https://vk.com/pro_instruktor"><img src="./image/VK-mob.png" alt=""/></a>
+                    <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Instagram-mob.png" alt=""/></a>
+                    <a href="https://t.me/pro_instruktor"><img src="./image/Telegram-mob.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href=""><img src="./image/logo-color.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__topline">
+                <div class="logo">
+                    <a href=""><img src="./image/logo-color.png" alt=""/></a>
+                </div>
+                <div class="menu" id="header-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="education.html">Обучение</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="instructors.html">Инструкторам</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <a class="contacts__phone" href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a>
+                    <div class="socials">
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Inst.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottomline">
+                <div class="title">
+                    <h3>Автошкола <span>Pro Instruktor</span></h3>
+                </div>
+                <div class="subtitle">
+                    <h6>Свежие новости для автолюбителей!</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="gallery-about-info">
+            <div class="container">
+                <div class="about-info">
+                    <div class="about-info__item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ApokyLNvSXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="about-info__item">
+                        <div class="info-text-scroll">
+                            <h5>К нам Вы пешеход, от нас Вы водитель</h5>
+                            <p>Мы предлагаем обучение по специальной методике, разработанной непосредственно в нашей академии. Уверяем Вас, на первом занятие Вы поймёте, что сделали правильный выбор.</p>
+                            <p>Почему стоит записаться к нам?</p>
+                            <ul>
+                                <li>МЫ ОТВЕЧАЕМ ЗА ВАШУ БЕЗОПАСНОСТЬ НЕ ТОЛЬКО НА ДОРОГАХ, НО И В ШКОЛЕ: поэтому всю теорию собрали на специальной платформе, видеоматериал с которой вы можете изучать в любом месте и в любое время!</li>
+                                <li>ПРАКТИЧЕСКИЕ ЗАНЯТИЯ ПРОХОДЯТ НА СПЕЦИАЛЬНО ОБОРУДОВАННЫХ ПЛОЩАДКАХ: вы можете выбрать одну из предложенных локаций, исходя из удобного для вас расположения. Доступны площадки вблизи м. Молодежная, Марьино, Юго-западная и Домодедовская.</li>
+                            </ul>
+                            <p>Практические занятия, также, проводятся в разных частях города, шоссе и центра. Изучаем и разбираем ваши маршруты!</p>
+                            <p>Мы гарантируем индивидуальный подход к каждому ученику в зависимости от степени подготовки, возраста и психологической устойчивости.</p>
+                        </div>
+                        <div class="btn green-btn">
+                            <a href="#" class="js-open-modal" data-modal="recording">Хочу также</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h4>Новости</h4>
+                <div class="news-block" id="news-block">
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news1.png">
+                        <p class="news-block__data">29.11.2020</p>
+                        <p class="news-block__title">МВД даст доступ каршерингу и такси к базе данных ГИБДД о правах водителей</p>
+                        <p class="news-block__intro">Компании смогут проверять, имеет ли конкретный водитель право на управление автомобилем. Система должна заработать в 2021 году. Ранее ГИБДД сообщала о создании единой базы данных злостных нарушителей ПДД</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news2.png">
+                        <p class="news-block__data">18.11.2020</p>
+                        <p class="news-block__title">Эксперты назвали ключевую проблему ограничения скорости электросамокатов</p>
+                        <p class="news-block__intro">МВД совместно с Минтрансом предлагает ввести новые дорожные знаки для средств индивидуальной мобильности (СИМ). Об этом сообщил заместитель начальника Госавтоинспекции Николай Шеюхин.</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news3.png">
+                        <p class="news-block__data">09.11.2020</p>
+                        <p class="news-block__title">Савельев предложил ужесточить ПДД и открыть в России больше лоукостеров</p>
+                        <p class="news-block__intro">По мнению кандидата на пост главы Минтранса, нарушителей правил движения необходимо жестко останавливать. По его мнению, это позволит снизить число камер и светофоров на дорогах</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news1.png">
+                        <p class="news-block__data">29.11.2020</p>
+                        <p class="news-block__title">МВД даст доступ каршерингу и такси к базе данных ГИБДД о правах водителей</p>
+                        <p class="news-block__intro">Компании смогут проверять, имеет ли конкретный водитель право на управление автомобилем. Система должна заработать в 2021 году. Ранее ГИБДД сообщала о создании единой базы данных злостных нарушителей ПДД</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news2.png">
+                        <p class="news-block__data">18.11.2020</p>
+                        <p class="news-block__title">Эксперты назвали ключевую проблему ограничения скорости электросамокатов</p>
+                        <p class="news-block__intro">МВД совместно с Минтрансом предлагает ввести новые дорожные знаки для средств индивидуальной мобильности (СИМ). Об этом сообщил заместитель начальника Госавтоинспекции Николай Шеюхин.</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news3.png">
+                        <p class="news-block__data">09.11.2020</p>
+                        <p class="news-block__title">Савельев предложил ужесточить ПДД и открыть в России больше лоукостеров</p>
+                        <p class="news-block__intro">По мнению кандидата на пост главы Минтранса, нарушителей правил движения необходимо жестко останавливать. По его мнению, это позволит снизить число камер и светофоров на дорогах</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news1.png">
+                        <p class="news-block__data">29.11.2020</p>
+                        <p class="news-block__title">МВД даст доступ каршерингу и такси к базе данных ГИБДД о правах водителей</p>
+                        <p class="news-block__intro">Компании смогут проверять, имеет ли конкретный водитель право на управление автомобилем. Система должна заработать в 2021 году. Ранее ГИБДД сообщала о создании единой базы данных злостных нарушителей ПДД</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-block__item" id="news-block__item">
+                        <img src="./image/news1.png">
+                        <p class="news-block__data">29.11.2020</p>
+                        <p class="news-block__title">МВД даст доступ каршерингу и такси к базе данных ГИБДД о правах водителей</p>
+                        <p class="news-block__intro">Компании смогут проверять, имеет ли конкретный водитель право на управление автомобилем. Система должна заработать в 2021 году. Ранее ГИБДД сообщала о создании единой базы данных злостных нарушителей ПДД</p>
+                        <div  class="btn green-btn">
+                            <a href="news-inner.html" data-modal="recording">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-more" onClick="changeHeightNews();">Читать еще</div>
+            </div>
+        </section>
+        <section class="any-questions">
+            <div class="container">
+                <h4>Остались вопросы?</h4>
+                <div class="any-questions-items">
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUEAMbi8A" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative; border-radius: 6px;">
+                        </iframe>
+                    </div>
+                    <div class="form">
+                        <form action="#" method="post" name="cost-calculation">
+                            <h5>Рассчитайте стоимость обучения</h5>
+                            <p><input type="text" name="cost-name" placeholder="Ваше имя" required></p>
+                            <p><input type="text" name="cost-email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="Email" required></p>
+                            <p>
+                                <select required>
+                                    <option disabled selected>Начальные навыки</option>
+                                    <option value="no">Никогда не сидел за рулем</option>
+                                    <option value="yes">Есть начальные навыки</option>
+                                </select>
+                            </p>
+                            <p>
+                                <select required>
+                                    <option disabled selected>Категория</option>
+                                    <option value="a">Категория "A"</option>
+                                    <option value="b">Категория "В"</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="check-cost" name="cost-check" checked required>
+                                <label class="checkbox" for="check-cost"></label>
+                                <label for="check-cost">Нажимая кнопку, Вы даете согласие на <a href="#">обработку своих персональных данных</a>.</label>
+                            </p>
+                            <button type="submit" class="btn form-btn">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="logo-and-socials">
+                    <div class="logo">
+                        <a href="#"><img src="./image/logo.png" alt=""/></a>
+                    </div>
+                    <div class="socials">
+                        <h6>Соц. сети</h6>
+                        <a href="https://vk.com/pro_instruktor"><img src="./image/VK.png" alt=""/></a>
+                        <a href="https://www.instagram.com/pro_instruktor/"><img src="./image/Inst.png" alt=""/></a>
+                        <a href="https://t.me/pro_instruktor"><img src="./image/Telegram.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="information">
+                    <h6>Информация</h6>
+                    <p><a href="education.html">Обучение</a></p>
+                    <p><a href="instructors.html">Инструкторам</a></p>
+                </div>
+                <div class="contacts">
+                    <h6>Контакты</h6>
+                    <p><a href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a></p>
+                    <p><a href="tel:+7 (499) 999-99-99">+7 (499) 999-99-99</a></p>
+                    <p><a href="mailto:mail.mail@mail.ru">mail.mail@mail.ru</a></p>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
