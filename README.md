@@ -10,7 +10,7 @@
 - Галерея gallery.html
 - Инструкторам instructors.html
 - Новости news.html
-    - Внутренние страницы новостей
+    - Внутренние страницы новостей news-inner.html
 
 Стек технологий: HTML, CSS, JavaScript.
 
